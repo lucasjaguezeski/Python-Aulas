@@ -28,10 +28,9 @@ def solve_heat_equation(u):
             (un[1:-1, 1:-1, 2:] - 2*un[1:-1, 1:-1, 1:-1] + un[1:-1, 1:-1, :-2])/dz**2)
         u_hist.append(u.copy())
     return u, u_hist
+
 # Executar simulação e capturar o histórico
 u_final, u_hist = solve_heat_equation(u)
-# Executar simulação
-u_final = solve_heat_equation(u)
 
 # Visualização 3D
 def plot_3d(data, title):

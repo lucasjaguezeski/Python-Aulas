@@ -1,0 +1,8 @@
+flask
+flask_httpauth
+werkzeug.security
+subprocess
+threading
+uuid
+os
+ast
